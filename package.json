@@ -29,14 +29,12 @@
     "prettier": "^2.2.1",
     "tailwindcss": "^2.1.1"
   },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
-    ]
   }
 }
